@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="MsF-ro-oq5">
+                                <rect key="frame" x="24" y="30" width="366" height="606"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Yrj-IM-huw">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="606"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yrj-IM-huw" secondAttribute="height" multiplier="46:163" id="gsj-Al-AQH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-xs-2lD">
+                                        <rect key="frame" x="195" y="0.0" width="171" height="606"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eGn-xs-2lD" secondAttribute="height" multiplier="46:163" id="xJm-xM-7Us"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN3-Kv-LBa">
+                                <rect key="frame" x="181" y="677.66666666666663" width="52" height="34.333333333333371"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Roll" cornerStyle="small">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jt8-PS-u8W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fN3-Kv-LBa" secondAttribute="bottom" constant="24" id="BBA-o8-Fwi"/>
+                            <constraint firstItem="MsF-ro-oq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="TFi-DW-Sky"/>
+                            <constraint firstAttribute="trailing" secondItem="MsF-ro-oq5" secondAttribute="trailing" constant="24" id="Uk9-K6-eKx"/>
+                            <constraint firstItem="fN3-Kv-LBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAa-pz-lqI"/>
+                            <constraint firstAttribute="bottom" secondItem="MsF-ro-oq5" secondAttribute="bottom" constant="100" id="xFY-3f-exX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="eGn-xs-2lD" id="0u0-jq-ljj"/>
+                        <outlet property="diceImageView2" destination="Yrj-IM-huw" id="5La-Up-sXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.81818181818183" y="-2.510460251046025"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
+    <resources>
+        <image name="dice1" width="1024" height="1024"/>
+        <image name="dice2" width="1024" height="1024"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
