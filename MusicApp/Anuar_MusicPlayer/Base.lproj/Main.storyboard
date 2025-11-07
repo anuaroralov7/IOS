@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="main-stack">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title-label">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22" weight="semibold"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cover-image">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cover-image" secondAttribute="height" multiplier="1:1" id="aspect-1-1"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="min-height"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="progress-stack">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="current-time-label">
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="progress-slider">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="slider-height"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="progressSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="act-slider"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duration-label">
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="controls-stack">
+                                        <subviews>
+                                            
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" translatesAutoresizingMaskIntoConstraints="NO" id="prev-btn">
+                                                <state key="normal"/>
+                                                <connections>
+                                                    <action selector="didTapPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-prev"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" translatesAutoresizingMaskIntoConstraints="NO" id="playpause-btn">
+                                                <state key="normal"/>
+                                                <connections>
+                                                    <action selector="didTapPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-play"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" translatesAutoresizingMaskIntoConstraints="NO" id="next-btn">
+                                                <state key="normal"/>
+                                                <connections>
+                                                    <action selector="didTapNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-next"/>
+                                                </connections>
+                                            </button>
+                                            
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="main-stack" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lead-constraint"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="main-stack" secondAttribute="trailing" constant="16" id="trail-constraint"/>
+                            <constraint firstItem="main-stack" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="top-constraint"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="main-stack" secondAttribute="bottom" constant="16" id="bottom-gte"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="cover-image" id="out-cover"/>
+                        <outlet property="currentTimeLabel" destination="current-time-label" id="out-ctime"/>
+                        <outlet property="durationLabel" destination="duration-label" id="out-dur"/>
+                        <outlet property="progressSlider" destination="progress-slider" id="out-slider"/>
+                        <outlet property="nextButton" destination="next-btn" id="out-next"/>
+                        <outlet property="playPauseButton" destination="playpause-btn" id="out-play"/>
+                        <outlet property="previousButton" destination="prev-btn" id="out-prev"/>
+                        <outlet property="titleLabel" destination="title-label" id="out-title"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

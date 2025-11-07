@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		06630F412EBCE5880017DAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06630F222EBCE5880017DAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06630F292EBCE5880017DAF1;
+			remoteInfo = Anuar_MusicPlayer;
+		};
+		06630F4B2EBCE5880017DAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06630F222EBCE5880017DAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06630F292EBCE5880017DAF1;
+			remoteInfo = Anuar_MusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06630F2A2EBCE5880017DAF1 /* Anuar_MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anuar_MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06630F402EBCE5880017DAF1 /* Anuar_MusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Anuar_MusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06630F4A2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Anuar_MusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		06630F522EBCE5890017DAF1 /* Exceptions for "Anuar_MusicPlayer" folder in "Anuar_MusicPlayer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 06630F292EBCE5880017DAF1 /* Anuar_MusicPlayer */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		06630F2C2EBCE5880017DAF1 /* Anuar_MusicPlayer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				06630F522EBCE5890017DAF1 /* Exceptions for "Anuar_MusicPlayer" folder in "Anuar_MusicPlayer" target */,
+			);
+			path = Anuar_MusicPlayer;
+			sourceTree = "<group>";
+		};
+		06630F432EBCE5880017DAF1 /* Anuar_MusicPlayerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Anuar_MusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		06630F4D2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Anuar_MusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06630F272EBCE5880017DAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F3D2EBCE5880017DAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F472EBCE5880017DAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06630F212EBCE5880017DAF1 = {
+			isa = PBXGroup;
+			children = (
+				06630F2C2EBCE5880017DAF1 /* Anuar_MusicPlayer */,
+				06630F432EBCE5880017DAF1 /* Anuar_MusicPlayerTests */,
+				06630F4D2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests */,
+				06630F2B2EBCE5880017DAF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06630F2B2EBCE5880017DAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06630F2A2EBCE5880017DAF1 /* Anuar_MusicPlayer.app */,
+				06630F402EBCE5880017DAF1 /* Anuar_MusicPlayerTests.xctest */,
+				06630F4A2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06630F292EBCE5880017DAF1 /* Anuar_MusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06630F532EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayer" */;
+			buildPhases = (
+				06630F262EBCE5880017DAF1 /* Sources */,
+				06630F272EBCE5880017DAF1 /* Frameworks */,
+				06630F282EBCE5880017DAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				06630F2C2EBCE5880017DAF1 /* Anuar_MusicPlayer */,
+			);
+			name = Anuar_MusicPlayer;
+			packageProductDependencies = (
+			);
+			productName = Anuar_MusicPlayer;
+			productReference = 06630F2A2EBCE5880017DAF1 /* Anuar_MusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06630F3F2EBCE5880017DAF1 /* Anuar_MusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06630F582EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayerTests" */;
+			buildPhases = (
+				06630F3C2EBCE5880017DAF1 /* Sources */,
+				06630F3D2EBCE5880017DAF1 /* Frameworks */,
+				06630F3E2EBCE5880017DAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06630F422EBCE5880017DAF1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				06630F432EBCE5880017DAF1 /* Anuar_MusicPlayerTests */,
+			);
+			name = Anuar_MusicPlayerTests;
+			packageProductDependencies = (
+			);
+			productName = Anuar_MusicPlayerTests;
+			productReference = 06630F402EBCE5880017DAF1 /* Anuar_MusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06630F492EBCE5880017DAF1 /* Anuar_MusicPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06630F5B2EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayerUITests" */;
+			buildPhases = (
+				06630F462EBCE5880017DAF1 /* Sources */,
+				06630F472EBCE5880017DAF1 /* Frameworks */,
+				06630F482EBCE5880017DAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06630F4C2EBCE5880017DAF1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				06630F4D2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests */,
+			);
+			name = Anuar_MusicPlayerUITests;
+			packageProductDependencies = (
+			);
+			productName = Anuar_MusicPlayerUITests;
+			productReference = 06630F4A2EBCE5880017DAF1 /* Anuar_MusicPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06630F222EBCE5880017DAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					06630F292EBCE5880017DAF1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					06630F3F2EBCE5880017DAF1 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 06630F292EBCE5880017DAF1;
+					};
+					06630F492EBCE5880017DAF1 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 06630F292EBCE5880017DAF1;
+					};
+				};
+			};
+			buildConfigurationList = 06630F252EBCE5880017DAF1 /* Build configuration list for PBXProject "Anuar_MusicPlayer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06630F212EBCE5880017DAF1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 06630F2B2EBCE5880017DAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06630F292EBCE5880017DAF1 /* Anuar_MusicPlayer */,
+				06630F3F2EBCE5880017DAF1 /* Anuar_MusicPlayerTests */,
+				06630F492EBCE5880017DAF1 /* Anuar_MusicPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06630F282EBCE5880017DAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F3E2EBCE5880017DAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F482EBCE5880017DAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06630F262EBCE5880017DAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F3C2EBCE5880017DAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06630F462EBCE5880017DAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06630F422EBCE5880017DAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06630F292EBCE5880017DAF1 /* Anuar_MusicPlayer */;
+			targetProxy = 06630F412EBCE5880017DAF1 /* PBXContainerItemProxy */;
+		};
+		06630F4C2EBCE5880017DAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06630F292EBCE5880017DAF1 /* Anuar_MusicPlayer */;
+			targetProxy = 06630F4B2EBCE5880017DAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06630F542EBCE5890017DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Anuar_MusicPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06630F552EBCE5890017DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Anuar_MusicPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06630F562EBCE5890017DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06630F572EBCE5890017DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06630F592EBCE5890017DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anuar_MusicPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Anuar_MusicPlayer";
+			};
+			name = Debug;
+		};
+		06630F5A2EBCE5890017DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anuar_MusicPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Anuar_MusicPlayer";
+			};
+			name = Release;
+		};
+		06630F5C2EBCE5890017DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Anuar_MusicPlayer;
+			};
+			name = Debug;
+		};
+		06630F5D2EBCE5890017DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anuar.Anuar-MusicPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Anuar_MusicPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06630F252EBCE5880017DAF1 /* Build configuration list for PBXProject "Anuar_MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06630F562EBCE5890017DAF1 /* Debug */,
+				06630F572EBCE5890017DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06630F532EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06630F542EBCE5890017DAF1 /* Debug */,
+				06630F552EBCE5890017DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06630F582EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06630F592EBCE5890017DAF1 /* Debug */,
+				06630F5A2EBCE5890017DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06630F5B2EBCE5890017DAF1 /* Build configuration list for PBXNativeTarget "Anuar_MusicPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06630F5C2EBCE5890017DAF1 /* Debug */,
+				06630F5D2EBCE5890017DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06630F222EBCE5880017DAF1 /* Project object */;
+}
