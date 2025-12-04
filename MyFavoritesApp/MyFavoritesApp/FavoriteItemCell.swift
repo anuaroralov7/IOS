@@ -2,13 +2,15 @@ import UIKit
 
 final class FavoriteItemCell: UITableViewCell {
 
+    static let reuseIdentifier = "FavoriteItemCell"
+
     let itemImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .systemBlue
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 8
+        imageView.backgroundColor = UIColor.systemGray6
         return imageView
     }()
 
@@ -16,7 +18,7 @@ final class FavoriteItemCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .headline)
-        label.numberOfLines = 1
+        label.numberOfLines = 2
         return label
     }()
 
@@ -34,7 +36,7 @@ final class FavoriteItemCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .footnote)
         label.textColor = .secondaryLabel
-        label.numberOfLines = 0
+        label.numberOfLines = 2
         return label
     }()
 
@@ -48,15 +50,18 @@ final class FavoriteItemCell: UITableViewCell {
         setupUI()
     }
 
-    func configure(with item: FavoriteItem) {
+    func configure(with item: FavoriteItem, accentColor: UIColor) {
         titleLabel.text = item.title
         subtitleLabel.text = item.subtitle
         reviewLabel.text = item.review
         itemImageView.image = UIImage(systemName: item.systemImageName)
+        itemImageView.tintColor = accentColor
+        itemImageView.backgroundColor = accentColor.withAlphaComponent(0.12)
     }
 
     private func setupUI() {
-        selectionStyle = .none
+        selectionStyle = .default
+        accessoryType = .disclosureIndicator
 
         contentView.addSubview(itemImageView)
         contentView.addSubview(titleLabel)
