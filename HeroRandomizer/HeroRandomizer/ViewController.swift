@@ -1,3 +1,4 @@
+import Kingfisher
 import UIKit
 
 final class ViewController: UIViewController {
@@ -16,21 +17,24 @@ final class ViewController: UIViewController {
     private var attributeLabels: [HeroDisplayModel.Attribute: UILabel] = [:]
     private var heroes: [Superhero] = []
     private var isLoadingHero = false
-    private var currentImageTask: URLSessionDataTask?
+    private var currentImageTask: DownloadTask?
     private var hasDisplayedHero = false
+    private var currentHero: Superhero?
 
     private let service = SuperheroService.shared
-    private let imageLoader = ImageLoader.shared
+    private let storage = HeroStorage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        fetchRandomHero(shouldAnimate: false)
+        restoreLastHeroOrFetch()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         currentImageTask?.cancel()
+        heroImageView.kf.cancelDownloadTask()
+        imageLoadingIndicator.stopAnimating()
     }
 }
 
@@ -192,6 +196,14 @@ private extension ViewController {
         fetchRandomHero(shouldAnimate: true)
     }
 
+    func restoreLastHeroOrFetch() {
+        if let savedHero = storage.loadHero() {
+            configure(with: savedHero, shouldAnimate: false)
+        } else {
+            fetchRandomHero(shouldAnimate: false)
+        }
+    }
+
     func fetchRandomHero(shouldAnimate: Bool) {
         guard !isLoadingHero else { return }
         isLoadingHero = true
@@ -224,11 +236,14 @@ private extension ViewController {
             return
         }
 
-        configure(with: HeroDisplayModel(hero: hero), shouldAnimate: shouldAnimate)
+        configure(with: hero, shouldAnimate: shouldAnimate)
         finishLoading()
     }
 
-    func configure(with model: HeroDisplayModel, shouldAnimate: Bool) {
+    func configure(with hero: Superhero, shouldAnimate: Bool) {
+        currentHero = hero
+        storage.save(hero: hero)
+        let model = HeroDisplayModel(hero: hero)
         nameLabel.text = model.heroName
         aliasLabel.text = model.primaryAlias
         subtitleLabel.text = model.subtitle
@@ -240,21 +255,24 @@ private extension ViewController {
 
         setHeroImage(nil, animated: false)
         currentImageTask?.cancel()
+        let placeholder = UIImage(systemName: "person.crop.square")
 
         guard let imageURL = model.imageURL else {
-            setHeroImage(UIImage(systemName: "person.crop.square"), animated: shouldAnimate)
+            imageLoadingIndicator.stopAnimating()
+            setHeroImage(placeholder, animated: shouldAnimate)
             return
         }
 
         imageLoadingIndicator.startAnimating()
-        currentImageTask = imageLoader.loadImage(from: imageURL) { [weak self] result in
+        currentImageTask = heroImageView.kf.setImage(
+            with: imageURL,
+            placeholder: placeholder,
+            options: [.transition(.fade(0.35)), .cacheOriginalImage]
+        ) { [weak self] result in
             guard let self else { return }
             self.imageLoadingIndicator.stopAnimating()
-            switch result {
-            case .success(let image):
-                self.setHeroImage(image, animated: shouldAnimate)
-            case .failure:
-                self.setHeroImage(UIImage(systemName: "person.crop.square"), animated: shouldAnimate)
+            if case .failure = result {
+                self.setHeroImage(placeholder, animated: shouldAnimate)
             }
         }
     }

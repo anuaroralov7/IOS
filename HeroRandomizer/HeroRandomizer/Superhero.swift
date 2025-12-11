@@ -1,6 +1,6 @@
 import Foundation
 
-struct Superhero: Decodable, Identifiable {
+struct Superhero: Codable, Identifiable {
     let id: Int
     let name: String
     let slug: String
@@ -11,7 +11,7 @@ struct Superhero: Decodable, Identifiable {
     let connections: Connections
     let images: Images
 
-    struct Powerstats: Decodable {
+    struct Powerstats: Codable {
         let intelligence: Int?
         let strength: Int?
         let speed: Int?
@@ -20,7 +20,7 @@ struct Superhero: Decodable, Identifiable {
         let combat: Int?
     }
 
-    struct Appearance: Decodable {
+    struct Appearance: Codable {
         let gender: String?
         let race: String?
         let height: [String]?
@@ -29,7 +29,7 @@ struct Superhero: Decodable, Identifiable {
         let hairColor: String?
     }
 
-    struct Biography: Decodable {
+    struct Biography: Codable {
         let fullName: String?
         let alterEgos: String?
         let aliases: [String]?
@@ -39,17 +39,17 @@ struct Superhero: Decodable, Identifiable {
         let alignment: String?
     }
 
-    struct Work: Decodable {
+    struct Work: Codable {
         let occupation: String?
         let base: String?
     }
 
-    struct Connections: Decodable {
+    struct Connections: Codable {
         let groupAffiliation: String?
         let relatives: String?
     }
 
-    struct Images: Decodable {
+    struct Images: Codable {
         let xs: URL?
         let sm: URL?
         let md: URL?

@@ -1,3 +1,4 @@
+import Alamofire
 import Foundation
 
 final class SuperheroService {
@@ -17,56 +18,37 @@ final class SuperheroService {
 
     static let shared = SuperheroService()
 
-    private let session: URLSession
+    private let session: Session
     private let decoder: JSONDecoder
     private let allHeroesURL = URL(string: "https://akabab.github.io/superhero-api/api/all.json")!
 
-    init(session: URLSession = .shared, decoder: JSONDecoder = JSONDecoder()) {
+    init(session: Session = .default, decoder: JSONDecoder = JSONDecoder()) {
         self.session = session
         self.decoder = decoder
     }
 
     func fetchAllHeroes(completion: @escaping (Result<[Superhero], Error>) -> Void) {
-        let request = URLRequest(url: allHeroesURL, cachePolicy: .reloadRevalidatingCacheData, timeoutInterval: 30)
-
-        let task = session.dataTask(with: request) { [decoder] data, response, error in
-            if let error {
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
-                return
-            }
-
-            guard
-                let httpResponse = response as? HTTPURLResponse,
-                200 ..< 300 ~= httpResponse.statusCode
-            else {
-                DispatchQueue.main.async {
-                    completion(.failure(ServiceError.invalidResponse))
-                }
-                return
-            }
-
-            guard let data else {
-                DispatchQueue.main.async {
+        session.request(allHeroesURL, method: .get) { request in
+            request.timeoutInterval = 30
+            request.cachePolicy = .reloadRevalidatingCacheData
+        }
+        .validate(statusCode: 200..<300)
+        .responseDecodable(of: [Superhero].self, queue: .main, decoder: decoder) { response in
+            switch response.result {
+            case .success(let heroes):
+                if heroes.isEmpty {
                     completion(.failure(ServiceError.emptyPayload))
-                }
-                return
-            }
-
-            do {
-                let heroes = try decoder.decode([Superhero].self, from: data)
-                DispatchQueue.main.async {
+                } else {
                     completion(.success(heroes))
                 }
-            } catch {
-                DispatchQueue.main.async {
+            case .failure(let error):
+                if let statusCode = response.response?.statusCode, !(200..<300).contains(statusCode) {
+                    completion(.failure(ServiceError.invalidResponse))
+                } else {
                     completion(.failure(error))
                 }
             }
         }
-
-        task.resume()
     }
 }
 

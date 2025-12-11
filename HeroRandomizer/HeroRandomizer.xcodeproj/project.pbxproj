@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		07A0A2013200A10000A1A100 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07A0A1013200A10000A1A100 /* Alamofire */; };
+		07A0A2023200A10000A1A100 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 07A0A1023200A10000A1A100 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		06127DB52EE2005D00423200 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A0A2013200A10000A1A100 /* Alamofire in Frameworks */,
+				07A0A2023200A10000A1A100 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = HeroRandomizer;
 			packageProductDependencies = (
+				07A0A1013200A10000A1A100 /* Alamofire */,
+				07A0A1023200A10000A1A100 /* Kingfisher */,
 			);
 			productName = HeroRandomizer;
 			productReference = 06127D9E2EE2005C00423200 /* HeroRandomizer.app */;
@@ -212,6 +221,10 @@
 			productRefGroup = 06127D9F2EE2005C00423200 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				07A0A0013200A10000A1A100 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				07A0A0023200A10000A1A100 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			targets = (
 				06127D9D2EE2005C00423200 /* HeroRandomizer */,
 				06127DB32EE2005D00423200 /* HeroRandomizerTests */,
@@ -219,6 +232,38 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07A0A0013200A10000A1A100 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+		07A0A0023200A10000A1A100 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07A0A1013200A10000A1A100 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07A0A0013200A10000A1A100 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		07A0A1023200A10000A1A100 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07A0A0023200A10000A1A100 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06127D9C2EE2005C00423200 /* Resources */ = {
